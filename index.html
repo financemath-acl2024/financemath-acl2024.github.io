@@ -100,7 +100,7 @@
             <span class="author-block"><sup style="color:#ffac33">3</sup>New York University</span><br>
             <span class="author-block"><sup style="color:#1649e2">4</sup>Penn State University,</span>
             <span class="author-block"><sup style="color:#eb0a95">5</sup>Allen Institute for AI</span><br>
-            <span class="paper-block"><b style="color:#f41c1c">ACL 2024 Oral</b> (195 in 1952, 10.0%)</span>
+            <span class="paper-block"><b style="color:#f41c1c">ACL 2024 Oral</b></span>
           </div>
 
           <div class="column has-text-centered">
@@ -115,27 +115,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2311.09797"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/yale-nlp/KnowledgeMath"
+                <a href="https://github.com/yale-nlp/FinanceMath"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -145,7 +125,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/yale-nlp/KnowledgeMath"
+                <a href="https://huggingface.co/datasets/yale-nlp/FinanceMath"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
@@ -175,18 +155,6 @@
                   <span>Leaderboard</span>
                 </a>
               </span>
-              <!-- Twitter Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <!-- <i class="far fa-images"></i> -->
-                      <!-- 💻🔗 -->
-                      <p style="font-size:18px">🌐</p>
-                  </span>
-                  <span>Twitter</span>
-                </a>
-              </span>
             </div>
 
           </div>
@@ -202,7 +170,7 @@
     <div class="columns is-centered m-6">
       <div class="column is-full has-text-centered content">
         <div class="content has-text-centered">
-          <img src="static/images/main_figure.png" alt="data-overview" style="max-width: 50%;"/>
+          <img src="static/images/main_figure.png" alt="data-overview" style="max-width: 100%;"/>
           <p> 
             Overview of
             <span class="financemath">FinanceMath</span>.<br/>
@@ -221,10 +189,8 @@
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            <b>Large Language Models (LLMs)</b> have demonstrated impressive problem-solving capabilities across various domains, but their ability to handle knowledge-intensive mathematical reasoning in specialized fields remains understudied. To address this gap, we introduce <b>FinanceMath</b>, a benchmark designed to evaluate LLMs' performance in knowledge-intensive mathematical reasoning within the finance domain. <br><br>
-            <b>FinanceMath</b> comprises <b>1200 examples</b> covering a wide range of finance subareas, with <b>40.2%</b> of problems requiring interpretation of tabular data. Each problem is accompanied by expert-annotated, Python-formatted solutions and a comprehensive knowledge bank of <b>864</b> financial terms and concepts. <br><br>
-            We conducted <b> a comprehensive evaluation of 44 prominent LLMs from 16 organizations</b>, including math-specific, code-based, and mixture-of-experts models. The best-performing <b>GPT-4o</b> model achieves an overall accuracy of <b>60.9%</b> using Chain-of-Thought prompting, significantly outperforming other models but still falling short of human expert performance (<b>92%</b>) by <b>31.1%</b>. <br><br>
-            Our analysis reveals that integrating domain-specific knowledge into prompts consistently improves LLMs' performance. This gap underscores the critical role that <b>FinanceMath</b> will play in advancing LLMs' capabilities in knowledge-intensive problem-solving, particularly in specialized domains like finance. We further explore various knowledge integration strategies, providing valuable insights for future research in enhancing LLMs' abilities in complex, domain-specific reasoning tasks.
+            Large Language Models (LLMs) have demonstrated impressive problem-solving capabilities across various domains, but their ability to handle knowledge-intensive mathematical reasoning in specialized fields remains understudied. To address this gap, we introduce <b>FinanceMath</b>, a benchmark designed to evaluate LLMs' performance in knowledge-intensive mathematical reasoning within the finance domain.
+            <b>FinanceMath</b> comprises <b>1200 examples</b> covering a wide range of finance subareas, with <b>40.2%</b> of problems requiring interpretation of tabular data. Each problem is accompanied by expert-annotated, Python-formatted solutions.
           </p>
         </div>
       </div>
@@ -238,37 +204,14 @@
     
     <div class="columns is-centered">
       <div class="column is-full has-text-centered content">
-        <h2 class="title is-3" id="leaderboard">Leaderboard on FinanceMath (development)</h2>
+        <!-- <h2 class="title is-3" id="leaderboard">FinanceMath Test Set Leaderboard</h2>
         <div class="content">
-          <p class="mt-3">Accuracy scores on the <b>development</b> subset (<b>200</b> examples) of <span class="financemath">FinanceMath</span>.
-          </p>
-
-          <div id="development_leaderboard"></div>
-        </div>
-
-        <h2 class="title is-3" id="leaderboard_test">Leaderboard on FinanceMath (test)</h2>
-        <div class="content">
-          <p class="mt-3">Accuracy scores on the <b>test</b> subset (<b>1000</b> examples) of <span class="financemath">FinanceMath</span>.
-          </p>
-
           <div id="test_leaderboard"></div>
+        </div> -->
 
-          <b>Task types:</b> <b>QU:</b> Quantitative,
-          <b>DE:</b> Derivatives,
-          <b>AC:</b> Accounting,
-          <b>MA:</b> Management,
-          <b>PO:</b> Portfolio,
-          <b>EC:</b> Economics,
-          <b>CO:</b> Corporate.
-          <br>
-          <b>Prompting types:</b> 
-          <b>(P):</b> Program-of-Thought,
-          <b>(C):</b> Chain-of-Thought.
-          <br>
-          <br>
           <div>
           <p>🚨 To submit your results to the leaderboard, please send to <a href="mailto:yilun.zhao@yale.edu">this email</a> with your result json files.</p>
-          <p>🚨 For more submission details, please refer to <a href="https://github.com/yale-nlp/KnowledgeMath">this link</a>.
+          <p>🚨 For more submission details, please refer to <a href="https://github.com/yale-nlp/FinanceMath">this link</a>.
           </p>
           </div>
         </div>
@@ -307,13 +250,14 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title is-3 has-text-centered">BibTeX</h2>
-    <pre><code>@misc{zhao2023knowledgemath,
-      title={KnowledgeMath: Knowledge-Intensive Math Word Problem Solving in Finance Domains}, 
+    <pre><code>@misc{zhao2024financemath,
+      title={FinanceMath: Knowledge-Intensive Math Reasoning in Finance Domains}, 
       author={Yilun Zhao and Hongjun Liu and Yitao Long and Rui Zhang and Chen Zhao and Arman Cohan},
-      year={2023},
+      year={2024},
       eprint={2311.09797},
       archivePrefix={arXiv},
-      primaryClass={cs.CL}
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2311.09797}, 
 }</code></pre>
   </div>
 </section>
